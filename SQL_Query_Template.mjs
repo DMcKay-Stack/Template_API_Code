@@ -6,21 +6,21 @@ import logger from "./Error_Logger_Template.mjs";
 
 
 ///SQL Query
-var sqlQuery = 'SELECT * from database.dbo.table';
+var sqlQuery = 'SELECT * from database.dbo.table';      // Returns JSON Object Format
 
 
 // Database Connection:   
 if (environment == 'Production') {
-    db1 = poolConnectionLive;             //pool1 = new sql.ConnectionPool(config)
-    db1Connect = db1.connect();           //pool1Connect = pool1.connect()
+    db1 = poolConnectionLive;                           // pool1 = new sql.ConnectionPool(config)
+    db1Connect = db1.connect();                         // pool1Connect = pool1.connect()
     db1.on('error', err => {
         logger.error((err.stack || err))
     });
     console.log("Connected to Production Database");
 
 } else if (environment == 'Development') {
-    db1 = poolConnectionTest;             //pool1 = new sql.ConnectionPool(config)
-    db1Connect = db1.connect();           //pool1Connect = pool1.connect()
+    db1 = poolConnectionTest;                           // pool1 = new sql.ConnectionPool(config)
+    db1Connect = db1.connect();                         // pool1Connect = pool1.connect()
     db1.on('error', err => {
         logger.error((err.stack || err))
     });
@@ -30,9 +30,9 @@ if (environment == 'Production') {
 
 //Set Up Function
 async function queryHandler() {
-    await db1Connect;                                       //pool1Connect
+    await db1Connect;                                   // pool1Connect
     try {
-        const request = db1.request();                      //pool1.request()
+        const request = db1.request();                  // pool1.request()
         const result = await request.query(sqlQuery);       
            return result.recordset;
     } catch (err) {
