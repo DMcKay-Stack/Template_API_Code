@@ -53,8 +53,8 @@ export const logger = winston.createLogger({
             port: 587,
             ssl: false,
             tls: true,
-            username: process.env.COMPANY_EMAIL_USERNAME,
-            password: process.env.COMPANY_EMAIL_PASSWORD,
+            username: process.env.COMPANY_EMAIL_USERNAME_WINSTON,
+            password: process.env.COMPANY_EMAIL_PASSWORD_WINSTON,
         }),
 
         new winston.transports.Console({format: winston.format.simple() })  // can change this to winston.format.json() to show error differently.

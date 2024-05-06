@@ -50,8 +50,8 @@ let lockdir = '/src/tempLock/FTP_CALL.lock';
 
 const config = {  
     host: 'company.sharetru.com',
-    username: process.env.FTP_USER,
-    password: process.env.FTP_PASS
+    username: process.env.SHARETRU_FTP_USER,
+    password: process.env.SHARETRU_FTP_PASS
 };
 
 let options = {

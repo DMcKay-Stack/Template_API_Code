@@ -16,7 +16,7 @@ import logger from "../Email_Related/Error_Logger_Template.mjs";
 
 //Set Variables
 const filePath = path.join('/folder','filename');
-const decryptPass = process.env.DECRYPTION_PASSWORD;
+const decryptPass = process.env.SEVEN_ZIP_DECRYPTION_PASSWORD;
 const newFilePath = path.join('/new_folder','filename');
 
 
