@@ -5,7 +5,7 @@ import { exec } from 'child_process';
 
 
 //JS Code
-import logger from "./Error_Logger_Template.mjs";
+import logger from "../Email_Related/Error_Logger_Template.mjs";
 /*Must Also Have Downloaded 7-Zip to Machine Utilizing this Code*/
 
 

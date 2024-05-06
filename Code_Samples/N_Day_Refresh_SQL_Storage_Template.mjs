@@ -4,9 +4,9 @@ import dateFormat from 'dateformat';
 
 
 //JS Code
-import poolConnectionLive from './production_database_Template.mjs';
-import poolConnectionTest from './test_database_Template.mjs';
-import logger from "./Error_Logger_Template.mjs";
+import poolConnectionLive from '../SQL_Related/production_database_Template.mjs';
+import poolConnectionTest from '../SQL_Related/test_database_Template.mjs';
+import logger from "../Email_Related/Error_Logger_Template.mjs";
 
 
 //Set Date

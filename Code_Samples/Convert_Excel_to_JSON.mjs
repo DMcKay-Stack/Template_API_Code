@@ -9,7 +9,7 @@ import xlsx from "xlsx";
 
 //JS Code
 import sqlStorage from './SQL_Storage_Template.mjs';
-import logger from "./Error_Logger_Template.mjs";
+import logger from "../Email_Related/Error_Logger_Template.mjs";
 
 
 //Set Dates

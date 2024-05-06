@@ -7,9 +7,9 @@ import sql from 'mssql';
 
 
 //JS Code
-import poolConnectionLive from './production_database_Template.mjs';
-import poolConnectionTest from './test_database_Template.mjs';
-import logger from "./Error_Logger_Template.mjs";
+import poolConnectionLive from '../production_database_Template.mjs';
+import poolConnectionTest from '../test_database_Template.mjs';
+import logger from "../Email_Related/Error_Logger_Template.mjs";
 
 
 //////////////////////////////////////////////////////////////////////////////////

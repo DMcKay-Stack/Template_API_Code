@@ -6,7 +6,7 @@ import fse from "fs-extra";
 import buffer from "buffer";
 import * as url from 'url';
 import path from 'path';
-import logger from "./Error_Logger_Template.mjs";
+import logger from "../Email_Related/Error_Logger_Template.mjs";
 
 
 //Retrieve File Name

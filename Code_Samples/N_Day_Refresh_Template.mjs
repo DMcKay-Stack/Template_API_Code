@@ -5,12 +5,12 @@ import buffer from "buffer";
 
 
 //JS Code
-import queryArray from "./SQL_Query_Template.mjs";
+import queryArray from "../SQL_Related/SQL_Query_Template.mjs";
 import api_call from "./API_Call_NodeFetch_Template.mjs";
 import sqlStorage from "./N_Day_Refresh_SQL_Storage_Template.mjs";
 import sqlDeleteRows from "./SQL_Delete_Template.mjs";
 import jsonStorage from "./JSON_Storage_Template.mjs";
-import logger from "./Error_Logger_Template.mjs";
+import logger from "../Email_Related/Error_Logger_Template.mjs";
 
 
 //Required Functions
